@@ -1,0 +1,105 @@
+ 
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #AFE1AF;
+  }
+
+  .upload-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4b4b4b;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-input[type="file"] {
+    padding: 3px;
+  }
+  
+  .location-input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location-input {
+    flex: 1;
+  }
+  
+  .map-button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #5db0dd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .map-button:hover {
+    background-color: #2575fc;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    background-color: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #2575fc;
+  }
+  

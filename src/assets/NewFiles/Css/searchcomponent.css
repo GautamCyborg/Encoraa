@@ -1,0 +1,55 @@
+.search-component {
+  padding: 20px;
+  max-width: full;
+  margin: 0 auto;
+  background-color: rgb(170, 207, 101);
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.checkbox-input {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 600px) {
+  .search-component {
+    padding: 10px;
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+}

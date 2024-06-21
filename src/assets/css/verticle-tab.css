@@ -1,0 +1,105 @@
+.demo{ background: #efd391; }
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.vertical-tab{ display: table; }
+.vertical-tab .nav-tabs{
+    display: table-cell;
+    width: 28%;
+    min-width: 28%;
+    border: none;
+    position: relative;
+}
+.vertical-tab .nav-tabs li{
+    float: none;
+    vertical-align: top;
+}
+.vertical-tab .nav-tabs li a{
+    display: block;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #505050;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li a:hover,
+.vertical-tab .nav-tabs li.active a{
+    color: #505050;
+    background: transparent;
+    border: none;
+}
+.vertical-tab .nav-tabs li a:before,
+.vertical-tab .nav-tabs li a:after{
+    content: "";
+    width: 100%;
+    height: 100% ;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li a:after{
+    width: 5px;
+    background: #de7921;
+    left: 97%;
+}
+.vertical-tab .nav-tabs li.active a:before,
+.vertical-tab .nav-tabs li a:hover:before,
+.vertical-tab .nav-tabs li.active a:after,
+.vertical-tab .nav-tabs li a:hover:after{ left: 0; }
+.vertical-tab .tab-content{
+    display: table-cell;
+    padding: 15px 25px;
+    background: #fff;
+    font-size: 15px;
+    color: #505050;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: justify;
+    vertical-align: top;
+    position: relative;
+}
+.vertical-tab .tab-content h3{
+    font-size: 24px;
+    color: #505050;
+    margin: 0 0 5px 0;
+}
+@media only screen and (max-width: 479px){
+    .vertical-tab .nav-tabs {
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+    .vertical-tab .nav-tabs li{ margin-bottom: 10px; }
+    .vertical-tab .nav-tabs li a { padding: 10px; }
+    .vertical-tab .nav-tabs li a:before{
+        top: 100%;
+        left: 0;
+    }
+    .vertical-tab .nav-tabs li a:after{
+        width: 100%;
+        height: 4px;
+        top: 90%;
+        left: 0;
+    }
+    .vertical-tab .nav-tabs li.active a:before,
+    .vertical-tab .nav-tabs li a:hover:before,
+    .vertical-tab .nav-tabs li.active a:after,
+    .vertical-tab .nav-tabs li a:hover:after{ top: 0; }
+    .vertical-tab .tab-content {
+        display: block;
+        padding: 20px 15px 5px;
+    }
+    .vertical-tab .tab-content h3{ font-size: 18px; }
+}
